@@ -1,4 +1,4 @@
-//Importamos las librerías necesarias para funciones como 
+//Importamos las librerÃ­as necesarias para funciones como 
 #include <iostream>
 #include <cstring>
 #include <string>
@@ -76,7 +76,7 @@ void encolarCompra(Cola& c) {
     cout << "Usuario: "; cin.ignore(); cin.getline(nuevo->datos.user, 40);
     
     
-    nuevo->datos.tipoOper = 1; //Por defecto es el tipo 1.- Compra; ya que la función es encolar una operación del tipo compra
+    nuevo->datos.tipoOper = 1; //Por defecto es el tipo 1.- Compra; ya que la funciÃ³n es encolar una operaciÃ³n del tipo compra
 
     
 	cout << "Criptomoneda (1. BTC / 2. ETH / 3. SOL / 4. XRP): "; cin >> nuevo->datos.tipoCrypto; cin.ignore();
@@ -126,14 +126,14 @@ void mostrarActividadReciente(Pila p) {
     cout << "\n--- ACTIVIDAD RECIENTE ---\n";
     while (actual) {
         cout << "Usuario: " << actual->datos.user
-             << ", Tipo: " << lista_tipoCrypto[actual->datos.tipoOper]
+             << ", Tipo: " << lista_tipoOper[actual->datos.tipoOper]
              << ", Cripto: " << lista_tipoCrypto[actual->datos.tipoCrypto]
              << ", Monto: $" << actual->datos.monto << endl;
         actual = actual->siguiente;
     }
 }
 
-// -------------------- MENÚ PRINCIPAL --------------------
+// -------------------- MENÃš PRINCIPAL --------------------
 int main() {
     Cola colaCompras;
     Pila actividad;
@@ -143,8 +143,8 @@ int main() {
     int opcion;
 
     do {
-        cout << "\n--- Billetera Crypto: Blockchain bebé ---\n";
-        cout << "1. Registrar operación en historial\n";
+        cout << "\n--- Billetera Crypto: Blockchain bebÃ© ---\n";
+        cout << "1. Registrar operaciÃ³n en historial\n";
         cout << "2. Mostrar historial de operaciones\n";
         cout << "3. Encolar solicitud de compra\n";
         cout << "4. Mostrar cola de compras\n";
